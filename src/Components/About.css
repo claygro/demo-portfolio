@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-container {
+  background-image: url(../assets/backgroundAbout.jpg);
+  /* height: 100vh; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-inline: 50px;
+}
+
+.flex-about {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.about-heading {
+  color: lightseagreen;
+  font-size: 50px;
+  animation: top 1s;
+}
+/* this top animation is in index.css file */
+.about-boy {
+  width: 20rem;
+  height: 22rem;
+  transform: rotate(5deg);
+  animation: right 1s;
+}
+@keyframes right {
+  0% {
+    position: relative;
+    right: -70px;
+  }
+  100% {
+    position: relative;
+    right: 0;
+  }
+}
+.about-para {
+  color: rgb(157, 157, 157);
+  font-size: 25px;
+  animation: bottom 1s;
+}
+@keyframes bottom {
+  0% {
+    position: relative;
+    bottom: -70px;
+  }
+  100% {
+    position: relative;
+    bottom: 0;
+  }
+}
+.hobbies {
+  margin-top: 15rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hobbies-heading {
+  font-size: 30px;
+}
+.about-li {
+  font-size: 20px;
+}
+.about-li::marker {
+  content: "👉 ";
+}
+.about-img {
+  width: 80px;
+  height: 80px;
+}
+.about-btn {
+  background: transparent;
+  border: 3px solid rgb(105, 105, 166);
+  border-radius: 10px;
+}
+.skill-heading {
+  margin-top: 10rem;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+.about-icon {
+  /* margin-top: 90px; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  top: 9rem;
+}
